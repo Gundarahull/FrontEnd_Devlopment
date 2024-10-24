@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+  </head>
+  <body>
+    <div class="specificity">
+      <h1>Specificity</h1>
+      <p>Rules // order //Ponits</p>
+      <div>
+        InlineStyle>ID_Selector>Class//Attribute//PseudoClasses>Element
+        >Universal
+      </div>
+      <h3>Points</h3>
+      <p>InlineStyle=1000</p>
+      <p>ID_Selector=100</p>
+      <p>Class//Attribute//PseudoClasses=10</p>
+      <p>Pseudo classes-----:hover.:active...etc like that</p>
+      <p>Element=1</p>
+      <p>Universal=0</p>
+      <div>
+        If the same Class is present thwn we look into the Poistion...last
+        poistion we will take into consideration...
+      </div>
+    </div>
+  </body>
+</html>

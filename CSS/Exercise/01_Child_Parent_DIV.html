@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Children_Parent_Div</title>
+    <style>
+      /* div:first-child{
+            background-color: red;
+            color: yellow;
+
+        }
+        div:nth-child(){
+            background-color: aqua;
+            color: brown;
+        } */
+      div > p:first-child {
+        background-color: red;
+        color: yellow;
+      }
+      /* Select all p elements except the first and last */
+      div > p:not(:first-child) {
+        background-color: lightblue;
+      }
+
+      /* Select all p elements except the first and last */
+      /* div > p:not(:first-child):not(:last-child) {
+        background-color: lightblue;
+      } */
+
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+        excepturi?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolor
+        amet quidem eos est necessitatibus.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+        delectus sit minima saepe eaque, porro cumque facilis labore obcaecati
+        nihil?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime,
+        soluta!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        aliquid incidunt assumenda ut dicta unde.
+      </p>
+    </div>
+
+    <div>
+      div:first-child means div anni untayi kadha vatilo unna first-child ani
+    </div>
+  </body>
+</html>

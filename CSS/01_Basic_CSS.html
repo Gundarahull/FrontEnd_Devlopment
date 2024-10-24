@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction_to_CSS</title>
+    <style>
+      /* Element Seelctor */
+      div,
+      span {
+        background-color: aqua;
+      }
+      ol {
+        padding: 20px;
+        margin: 10px auto;
+      }
+
+      /* Class Selector */
+      .class {
+        background-color: red;
+      }
+
+      /* Id Selector */
+      #id {
+        background-color: yellow;
+      }
+
+      /* Universal Selctor */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* child Selector */
+      ol > li {
+        font-family: cursive;
+      }
+
+      /* PseudoSelector */
+      a:link {
+        background-color: brown;
+      }
+      a:visited {
+        background-color: rgb(252, 108, 5);
+      }
+      a:hover {
+        background-color: yellow;
+      }
+      a:active {
+        background-color: springgreen;
+      }
+
+      /* Descant Slector */
+      .parent .child {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div>intosuction to css</div>
+    <span> i am a Span </span>
+    <p>by comma in the selector it will get both tag like div,span....</p>
+
+    <h3>WAYs of Injecting CSS</h3>
+    <ol>
+      <li>INline CSS</li>
+      <div>
+        Injecting the CSS into tags with style attribute
+        style="background-color:red"
+      </div>
+      <li>Internal CSS</li>
+      <div>Writing in the html css</div>
+      <li>Ecternal CSS</li>
+      <div>injecting the CSS file</div>
+    </ol>
+
+    <h3>Selectors</h3>
+    <ol>
+      <li>Element Selector</li>
+      <div>Direct targeting the Element with tag name</div>
+      <li class="class">Class Selector</li>
+      <div>Selctig using class name</div>
+      <li id="id">Id Seelctor</li>
+      <div>With ID NAme</div>
+      <li>Universal Selector</li>
+      <div>all tags with *</div>
+      <li>Child Seelctor</li>
+      <div>like here iam taking ol main parent> in these child parent li</div>
+      <li>Pseudo selectors with works mainly on links</li>
+      <a href="http://google.com">Google</a>
+      <a href="http://fb.com">FaceBook</a>
+      <a href="http://quora.com">Quora</a>
+      <a href="http://stack.com">stack</a>
+      <li>Descant Selctor</li>
+      <div class="parent">
+        <div class="child">i am child in the parent</div>
+      </div>
+    </ol>
+  </body>
+</html>

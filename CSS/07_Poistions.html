@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+        .box{
+            position: relative;
+            width: 700px;
+            height: 1300px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        .box1{
+            width:200px;
+            position: sticky;
+            top: 10px;
+            height: 200px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+        }
+        .box2{
+            width:200px;
+           
+            height: 200px;
+            background-color: rgb(22, 139, 32);
+            border: 2px solid black;
+
+        }
+        .box3{
+            width:200px;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            height: 200px;
+            border-radius: 200px;
+            text-align: center;
+            background-color: rgb(182, 121, 29);
+            border: 2px solid black;
+
+        }.box4{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width:200px;
+            height: 200px;
+            background-color: rgb(17, 92, 60);
+            border: 2px solid black;
+
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Positions</h1>
+    <ul>
+      <li>Static</li>
+      <div>
+        Like Normally box is inbulit-- when thw poistion is static there is no
+        movement
+      </div>
+      <li>Relative</li>
+      <div>Yadiki thipputhavo thiii dengu</div>
+      <li>Absolute</li>
+      <div>Flying car</div>
+      <li>Fixed---kumtha musukoni akkade undu</li>
+      <li>Sticky----- eentha reach ayina tarvtha in ka nuvvu</li>
+    </ul>
+    <h3>Inko important thing yenti antay For IMAGES we cant hit direct absolute so..insert in the DIV then work....</h3>
+    <div class="box">
+        <div class="box1"> BOX_1______STICKY</div>
+        <div class="box2">BOX_2</div>
+        <div class="box3">BOX_3_______FIXED</div>
+        <div class="box4">BOX_4________ABSOLUTE</div>
+    </div>
+  </body>
+</html>
