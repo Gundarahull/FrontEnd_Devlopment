@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind with CLI</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white p-4">
+    <h1 class="text-3xl font-bold bg-red-800 m-7 p-9 text-center rounded-full">
+      Hello world!... 1 REM=16px
+    </h1>
+    <div class="bg-white p-10 rounded-xl">
+      <h5 class="text-black text-3xl text-center p-3">Just creating header</h5>
+      <ul class="bg-blue-400 flex justify-center [&>*]:p-5">
+        <li class="hover:bg-slate-900"><a href="#"></a>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>LogOut</li>
+      </ul>
+    </div>
+
+    <div class="bg-blue-600 p-10 m-4 rounded-xl">
+      <h4 class="text-3xl text-center font-extrabold">"Colours"</h4>
+      <p>the shades netween 50-950</p>
+      <p>Common pattern</p>
+      <ul class="p-5 border-2 border-red-800">
+        <li>text-colorname-shadeNo</li>
+        <p class="text-red-300">applying the text</p>
+        <li>bg-colorname-shadeNo</li>
+        <p class="bg-purple-500">BackGround Change</p>
+        <li>border-colorname-shadeNo</li>
+        <p class="border-4 border-white-800 rounded-xl">Border Vhange</p>
+        <li>outline-colorname-shadeNo</li>
+        <p class="outline-red-700 outline-dotted">Outline change</p>
+      </ul>
+      <p class="p-4">
+        Feature Border Outline Position Border is drawn inside or outside the
+        element's box depending on the box-sizing property. Outline is drawn
+        outside the element's box and doesn't affect layout or dimensions.
+        Impact on Layout Affects the element's dimensions (e.g., increasing
+        border size changes the element's width/height). Does not affect the
+        element's dimensions or layout.
+      </p>
+    </div>
+
+    <div class="bg-purple-600 p-10 m-4 rounded-xl">
+      <h4 class="text-3xl text-center font-extrabold m-4">
+        "Margin and Padding"
+      </h4>
+      <p>the padding and margin in the range of 0-96 rem</p>
+      <p>m-1=4px(0.25rem)</p>
+      <div>
+        <p class="m-1">margin 1</p>
+        <p>Margin mx- both left and right</p>
+        <p>MArgin my-both top and bottom</p>
+        <p>Customized Padding or Margin =p-[desired px]</p>
+      </div>
+      <div>
+        <span class="bg-cyan-800 m-4 p-4 block rounded-xl"
+          >Changing Span into BLOCK</span
+        >
+      </div>
+    </div>
+
+    <div class="bg-cyan-600 p-10 m-4 rounded-xl">
+      <h4 class="text-3xl text-center font-extrabold p-5">
+        "Max Width and Min Width"
+      </h4>
+      <p class="max-w-52 w-64 bg-yellow-400 text-center">MAx width</p>
+      <p>
+        If w-* (width) is greater than max-w-* (maximum width), the element's
+        width will be constrained by max-w-*. The max-w-* takes priority as it
+        sets the upper limit for the element's width.
+      </p>
+      <p class="w-32 min-w-48 bg-blue-400 text-center">Min Width</p>
+      <p>> Same for minwidth</p>
+
+      <div>
+        <p>what about only fit.. it fit upto the content only</p>
+        <p class="bg-blue-400 text-center w-fit">Width upto fit</p>
+        <p>w-fit</p>
+      </div>
+
+      <div>
+        <p>onlt 50% to the screen</p>
+        <p class="bg-blue-400 text-center w-1/2">
+          Width upto Percantage regarding to Screen
+        </p>
+        <p class="bg-blue-400 text-center w-[12px]">w-1/2</p>
+      </div>
+    </div>
+
+    <div class="bg-white p-10 m-4 rounded-xl text-black">
+      <h4 class="text-3xl text-center font-extrabold p-5">
+        "Max Height and Min Height"
+      </h4>
+      <p>
+        h-screen- if the screen is scrrol, this div will occupy the entire
+        screen
+      </p>
+      <p>h-full it fills the only div size</p>
+      <p>max-min-height same like max-min width....no changes</p>
+      <h4 class="text-xl">
+        Viewport: The area of the browser window used to display a webpage.
+        Excludes elements like toolbars, address bars, and other browser UI
+        components. The size of the viewport can change if the browser is
+        resized (desktop) or if the device's orientation is changed (mobile).
+      </h4>
+    </div>
+
+    <div class="bg-gray-600 p-10 m-4 rounded-xl h-full">
+      <h4 class="text-3xl text-center font-extrabold p-5">"Size Class"</h4>
+      <p class="size-45 bg-black">Size means {height, width will be same}</p>
+    </div>
+  </body>
+</html>
