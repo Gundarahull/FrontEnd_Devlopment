@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables_MediaQueries</title>
+    <style>
+      :root {
+        --color: red;
+      }
+      p {
+        color: var(--color);
+      }
+      ol li{
+        font-weight: bolder;
+      }
+      /* Default styles for mobile or small screens */
+.container {
+  padding: 10px;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Small screens (sm) - min-width: 640px */
+@media (min-width: 640px) {
+  .container {
+    padding: 20px;
+    background-color: lightgreen;
+    font-size: 18px;
+  }
+}
+
+/* Medium screens (md) - min-width: 768px */
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+    background-color: lightcoral;
+    font-size: 20px;
+  }
+}
+
+/* Large screens (lg) - min-width: 1024px */
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+    background-color: lightgoldenrodyellow;
+    font-size: 22px;
+  }
+}
+
+/* Extra-large screens (xl) - min-width: 1280px */
+@media (min-width: 1280px) {
+  .container {
+    padding: 50px;
+    background-color: lightsalmon;
+    font-size: 24px;
+  }
+}
+
+/* 2X-large screens (2xl) - min-width: 1536px */
+@media (min-width: 1536px) {
+  .container {
+    padding: 60px;
+    background-color: lightpink;
+    font-size: 26px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="var">
+      <p id="var1">Variable 1</p>
+      <p>Intiaztaion</p>
+      :root { --color: red; }
+      <p>Decleration</p>
+      p { color: var(--color); }
+    </div>
+    <div class="query">
+      <h1>Media Query for Responsive Design.....</h1>
+      Here are some common breakpoints in CSS:
+      <ol>
+        <li>sm (small): min-width: 640px</li>
+        <li>md (medium): min-width: 768px</li>
+        <li>lg (large): min-width: 1024px</li>
+        <li>xl (extra-large): min-width: 1280px</li>
+        <li>2xl (2x-large): min-width: 1536px</li>
+      </ol>
+    </div>
+    <div class="container">
+        Responsive Content
+      </div>
+      <div>
+        @media (min-width: 640px), it means only screens that are 640 pixels wide or larger will use this style.
+      </div>
+      <div>
+        @media (max-width: 640px), it means only screens that are 640 pixels wide or smaller will use this style.
+      </div>
+    
+  </body>
+</html>

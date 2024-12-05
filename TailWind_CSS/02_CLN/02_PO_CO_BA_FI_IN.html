@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PO_CO_BA_FI_IN</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white">
+    <h1 class="bg-red-500 rounded-xl text-center m-4 p-4 text-3xl font-bold">
+      Tailwind
+    </h1>
+    <div class="bg-blue-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "POSITIONS"
+      </h1>
+      <div class="bg-slate-600 relative size-56">
+        <div class="bg-yellow-600 absolute size-20 top-0 left-0">BOX-1</div>
+        <div class="bg-red-600 absolute size-20 top-0 right-0">BOX-2</div>
+        <div class="bg-green-600 absolute size-20 bottom-0 left-0">BOX-3</div>
+        <div class="bg-purple-600 absolute size-20 bottom-0 right-0">BOX-4</div>
+        <div class="bg-white absolute size-20 inset-16 z-10">BOX-5</div>
+      </div>
+      <h1 class="flex justify-center items-center p-4">
+        Absolute is like Tesla Cars which on AIR Releative is Like ROOM
+      </h1>
+      <p class="sticky top-0">Bottom-0, right-0 left-0 top-0</p>
+      <p>Inset is like giving spaces from both sides</p>
+      <p>fixed what wiil be happen it will be at fixed position</p>
+      <p>sticky</p>
+    </div>
+
+    <div class="bg-green-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "CONTAINER"
+      </h1>
+      <p>
+        Container is like automated which gives a left and bottom width
+        according to its screen size
+      </p>
+      <p>
+        To center the container we can use mx-auto or in the tailwind config
+        change into container into center
+      </p>
+    </div>
+    <div class="bg-white container text-black text-center">container Class</div>
+
+    <div class="bg-red-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "BACKGROUND CLASSES"
+      </h1>
+      <h4>Background Image</h4>
+      <p>
+        Nomrally whne we insert the image, it will repeated the image,to
+        checkMAte this one bg-no-repeat
+      </p>
+      <p>bg-center means image lo unna center anamata</p>
+      <p>bg-cover it will cover the whole div size</p>
+      <p>bg-contain upto image size only....</p>
+      <div
+        class="bg-[url('https://wallpapers.com/images/featured/iron-man-ouqxo5w2b59h0042.jpg')] size-96 bg-center bg-contain bg-no-repeat"
+      ></div>
+      <h3>Shadows</h3>
+      <div class="bg-green-500 size-24 shadow-black shadow-inner"></div>
+    </div>
+
+    <div class="bg-green-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Filters"
+      </h1>
+      <p>Filters are used to change the color of the background</p>
+      <ul>
+        <li>Nomrally like blur keyword with sm,xl,md</li>
+        <li>same like brightness 50,100,125,190...</li>
+        <li>same contrast ,.......</li>
+        <li>grayscale for blackwhite image</li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="bg-purple-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Interactivity Clasees"
+      </h1>
+      <ol>
+        <li>hover</li>
+        <button class="hover:p-5">Button-Hover</button>
+        <li>active</li>
+        <button class="active:bg-blue-800">Button-Active</button>
+        <li>Focus</li>
+        <p>Focus means if we click on this button, until clicked on the other click, it will remain same....</p>
+        <button class="focus:text-red-700">Button-Focus</button>
+      </ol>
+    </div>
+  </body>
+</html>

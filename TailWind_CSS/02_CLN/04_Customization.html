@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind-Customization</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white">
+    <h1 class="bg-red-500 rounded-xl text-center m-4 p-4 text-3xl font-bold">
+      Tailwind-Customization
+    </h1>
+    <div class="bg-blue-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Break-Points Customization"
+      </h1>
+      <p>
+        Normally when we wite customize in the theme Section , it wont work,that
+        only work which we are wrote----for refernce see tailwind Config,
+      </p>
+      <div class="bg-red-800 ra:bg-white size-36 sm:bg-black m-4"></div>
+    </div>
+    <div class="bg-pink-800 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Margin-Padding-Space Customization"
+      </h1>
+      <div class="bg-black size-60 m-13 p-8">PAdding Customization</div>
+      <p>
+        we can write individual like p,m,w,p like one by one---- u can refernce
+        in tailwind Config
+      </p>
+      <br />
+      <p>
+        to overcome this addind spacing with this one sapcing this will include
+        h,m,w,p --- u can refernce in tailwind Config
+      </p>
+    </div>
+
+    <div class="bg-green-800 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Directives"
+      </h1>
+      <p>Directives are certailn rules in the tailwind</p>
+      <ul>
+        <li>base</li>
+        <p>
+          at intial time when we use tailwind all becaome m-0.p-0 it will come
+          from base
+        </p>
+        <li>components</li>
+        <p>to make custom classes-----</p>
+        <li>utilities</li>
+        <p>we are using bg-red-500 all the things are come from this Section</p>
+      </ul>
+      <p>
+        we chnage thw core values with @layer base{ h1{ font-size:67px } }-this
+        includes our core css
+      </p>
+      <p>
+        we chnage thw core values with @layer base{ h1{ @apply text-3xl } }-this
+        includes tailwind css -----@apply to write in the tailwind css
+      </p>
+    </div>
+
+    <div class="bg-white text-black m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Custom-Classes"
+      </h1>
+      <p>
+        to write the custom Classes like same @layer components{.btn-primaary{
+        bg-cred-500 roundesd -xl....... }}
+      </p>
+      <p>direct we can use this like p class=".btn-primaary" this will apply</p>
+      <p>
+        we can also write btn-primry at the outside but at the time of
+        interactive Classes it wont work like active, hover .....
+      </p>
+    </div>
+
+    <div class="bg-orange-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Border"
+      </h1>
+      <p>Border is used to make the border of the element</p>
+      <div class="border size-14 border-t-blue-700 rounded-tr-xl border-dashed">
+        border
+      </div>
+    </div>
+
+    <div class="bg-yellow-600 m-4 p-4 rounded-xl">
+      <h1 class="flex justify-center items-center p-4 font-extrabold text-3xl">
+        "Font Classes"
+      </h1>
+      
+
+
+  </body>
+</html>
